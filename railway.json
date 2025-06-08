@@ -1,4 +1,9 @@
 {
-    "build": "npm install --legacy-peer-deps && npm build",
-    "start": "npm start"
-  }
+    "build": {
+      "command": "npm install --legacy-peer-deps && npm run build"
+    },
+    "start": {
+      "command": "npm start"
+    }
+}
+  
