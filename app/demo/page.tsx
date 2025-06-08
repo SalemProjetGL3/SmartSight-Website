@@ -144,7 +144,7 @@ export default function DemoPage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h2 className="text-2xl font-bold mb-4">Experience the Future of Assistive Technology</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-cyan-800">Experience the Future of Assistive Technology</h2>
             <p className="text-gray-700 mb-8">
               SmartSight combines advanced computer vision with natural language processing to create an intuitive audio
               interface that describes the world around you. The demonstration above shows how our technology works in
