@@ -31,6 +31,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Demo", href: "/demo" },
+    { name: "Presentation", href: "/presentation" },
     { name: "Features", href: "/features" },
   ]
 
@@ -68,7 +69,7 @@ export default function Header() {
             ))}
             <Link href="/report">
               <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white">
-                Get Started
+                Go to Report
               </Button>
             </Link>
           </nav>

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
-const appScreens = ["/app-screen-1.jpg", "/app-screen-2.jpg", "/app-screen-3.jpg", "/app-screen-4.jpg"]
+const appScreens = ["/app-screen-1.jpg", "/app-screen-2.png", "/app-screen-3.png", "/app-screen-4.png"]
 
 export default function IPhoneMockup() {
   const [currentScreen, setCurrentScreen] = useState(0)

@@ -88,7 +88,7 @@ export default function DemoPage() {
                 onTimeUpdate={handleTimeUpdate}
                 onEnded={() => setIsPlaying(false)}
               >
-                <source src="#" type="video/mp4" />
+                <source src="/SmartSight%20-%20Video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 

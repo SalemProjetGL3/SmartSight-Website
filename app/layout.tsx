@@ -11,7 +11,11 @@ export const metadata = {
   title: "SmartSight - AI-Powered Wearable for the Visually Impaired",
   description:
     "SmartSight transforms visual information into audio guidance for the visually impaired using advanced AI technology.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/logo-s.png',
+    apple: '/logo-s.png',
+  }
 }
 
 export default function RootLayout({

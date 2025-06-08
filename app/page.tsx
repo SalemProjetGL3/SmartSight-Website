@@ -102,13 +102,6 @@ export default function HomePage() {
             <Image src="/logo-s.png" alt="SmartSight Logo" width={450} height={450} className="mb-8" priority />
           </motion.div>
 
-          {/* <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-8 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-cyan-600"
-            variants={itemVariants}
-          >
-            See Beyond Limitations
-          </motion.h1> */}
-
           <motion.p className="text-xl md:text-2xl text-gray-700 max-w-3xl mb-8" variants={itemVariants}>
             AI-powered wearable technology that transforms visual information into audio guidance for the visually
             impaired.

@@ -12,30 +12,40 @@ export default function AboutPage() {
       role: "Software Engineering Student",
       bio: "Passionate about software development and artificial intelligence. Contributing to the development of SmartSight's core features.",
       image: "/ademjerbi.jpg",
+      github: "https://github.com/JerbiAdem",
+      linkedin: "https://www.linkedin.com/in/adem-jerbi-b4b2a1294/"
     },
     {
       name: "Issra Brini",
       role: "Software Engineering Student",
       bio: "Focused on user experience and interface design. Working on making SmartSight more accessible and user-friendly.",
       image: "/issrabrini.jpg",
+      github: "https://github.com/issrabrini",
+      linkedin: "https://www.linkedin.com/in/isra-brini-028623285/"
     },
     {
       name: "Mahdi Kacem",
       role: "Software Engineering Student",
       bio: "Specializing in backend development and system architecture. Ensuring SmartSight's robust performance.",
       image: "/mahdikacem.jpg",
+      github: "https://github.com/MahdiKacem",
+      linkedin: "https://www.linkedin.com/in/mahdi-kacem-42346b296/"
     },
     {
       name: "Salma Sghaier",
       role: "Software Engineering Student",
       bio: "Expert in data processing and analysis. Enhancing SmartSight's AI capabilities.",
       image: "/salmasghaier.jpg",
+      github: "https://github.com/salmasgh",
+      linkedin: "https://www.linkedin.com/in/salma-sghaier-0167ab244/"
     },
     {
       name: "Youssef Abid",
       role: "Software Engineering Student",
       bio: "Focused on system integration and testing. Ensuring quality and reliability of SmartSight.",
       image: "/youssefabid.png",
+      github: "https://github.com/abid-youssef",
+      linkedin: "https://www.linkedin.com/in/youssef-abid-55a250295/"
     },
   ]
 
@@ -43,7 +53,8 @@ export default function AboutPage() {
     name: "Hajer Taktak",
     role: "Project Supervisor",
     bio: "Guiding and mentoring the SmartSight team in their development journey. Providing expertise and oversight to ensure project success.",
-    image: "/mme-hajer.jpg",
+    // image: "/mme-hajer.jpg",
+    image: "/logo-s.png"
   }
 
   return (
@@ -61,7 +72,7 @@ export default function AboutPage() {
             </h1>
             <div className="text-xl text-gray-700 max-w-4xl mx-auto space-y-6">
               <p>
-                SmartSight is a project developed by first-year software engineering students at INSAT as part of our academic journey in 2024. Motivated by the desire to build meaningful technology, we set out to create a wearable system that assists visually impaired individuals through smart, real-time guidance. Our solution combines object detection using YOLO, depth estimation with MiDaS, and a rule-based system that delivers audio feedback to help users navigate safely and independently.
+                SmartSight is a project developed by first-year software engineering students at INSAT as part of our academic journey in 2025. Motivated by the desire to build meaningful technology, we set out to create a wearable system that assists visually impaired individuals through smart, real-time guidance. Our solution combines object detection using YOLO, depth estimation with MiDaS, and a rule-based system that delivers audio feedback to help users navigate safely and independently.
               </p>
             </div>
           </motion.div>
@@ -91,17 +102,23 @@ export default function AboutPage() {
                           size="icon"
                           variant="ghost"
                           className="rounded-full bg-gray-100/80 backdrop-blur-sm hover:bg-gray-200/80"
+                          asChild
                         >
-                          <Linkedin className="h-4 w-4 text-gray-700" />
-                          <span className="sr-only">LinkedIn profile</span>
+                          <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="h-4 w-4 text-gray-700" />
+                            <span className="sr-only">LinkedIn profile</span>
+                          </a>
                         </Button>
                         <Button
                           size="icon"
                           variant="ghost"
                           className="rounded-full bg-gray-100/80 backdrop-blur-sm hover:bg-gray-200/80"
+                          asChild
                         >
-                          <Github className="h-4 w-4 text-gray-700" />
-                          <span className="sr-only">GitHub profile</span>
+                          <a href={member.github} target="_blank" rel="noopener noreferrer">
+                            <Github className="h-4 w-4 text-gray-700" />
+                            <span className="sr-only">GitHub profile</span>
+                          </a>
                         </Button>
                       </div>
                     </div>
@@ -137,17 +154,23 @@ export default function AboutPage() {
                             size="icon"
                             variant="ghost"
                             className="rounded-full bg-gray-100/80 backdrop-blur-sm hover:bg-gray-200/80"
+                            asChild
                           >
-                            <Linkedin className="h-4 w-4 text-gray-700" />
-                            <span className="sr-only">LinkedIn profile</span>
+                            <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                              <Linkedin className="h-4 w-4 text-gray-700" />
+                              <span className="sr-only">LinkedIn profile</span>
+                            </a>
                           </Button>
                           <Button
                             size="icon"
                             variant="ghost"
                             className="rounded-full bg-gray-100/80 backdrop-blur-sm hover:bg-gray-200/80"
+                            asChild
                           >
-                            <Github className="h-4 w-4 text-gray-700" />
-                            <span className="sr-only">GitHub profile</span>
+                            <a href={member.github} target="_blank" rel="noopener noreferrer">
+                              <Github className="h-4 w-4 text-gray-700" />
+                              <span className="sr-only">GitHub profile</span>
+                            </a>
                           </Button>
                         </div>
                       </div>
@@ -180,7 +203,7 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">SmartSight Team 2024</h3>
+                <h3 className="text-2xl font-bold mb-2">SmartSight Team 2025</h3>
                 <p className="text-white/80">Working together to make a difference in assistive technology</p>
               </div>
             </div>
