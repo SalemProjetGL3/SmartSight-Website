@@ -15,28 +15,6 @@ export default function Footer() {
             <p className="text-gray-600 max-w-xs">
               Transforming visual information into audio guidance for the visually impaired through AI technology.
             </p>
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-gray-200 text-gray-700">
-                <Twitter className="h-4 w-4" />
-                <span className="sr-only">Twitter</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-gray-200 text-gray-700">
-                <Facebook className="h-4 w-4" />
-                <span className="sr-only">Facebook</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-gray-200 text-gray-700">
-                <Instagram className="h-4 w-4" />
-                <span className="sr-only">Instagram</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-gray-200 text-gray-700">
-                <Linkedin className="h-4 w-4" />
-                <span className="sr-only">LinkedIn</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-gray-200 text-gray-700">
-                <Github className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Button>
-            </div>
           </div>
 
           <div>
@@ -58,13 +36,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#features" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/features" className="text-gray-600 hover:text-gray-900 transition-colors">
                   Features
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Blog
                 </Link>
               </li>
             </ul>
@@ -74,28 +47,13 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/presentation" className="text-gray-600 hover:text-gray-900 transition-colors">
+                  Presentation
+                </Link>
+              </li>
+              <li>
+                <Link href="/report" className="text-gray-600 hover:text-gray-900 transition-colors">
                   Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Research Papers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Press Kit
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Terms of Service
                 </Link>
               </li>
             </ul>
@@ -105,16 +63,16 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-600">
               <li>SmartSight Technologies</li>
-              <li>123 Innovation Drive</li>
-              <li>San Francisco, CA 94107</li>
+              <li>National School of Applied Sciences and Technology</li>
+              <li>Tunis, Tunisia</li>
               <li className="pt-2">
                 <a href="mailto:info@smartsight.tech" className="text-cyan-400 hover:underline">
                   info@smartsight.tech
                 </a>
               </li>
               <li>
-                <a href="tel:+14155550123" className="text-cyan-400 hover:underline">
-                  +1 (415) 555-0123
+                <a href="tel:+216 50 244 122" className="text-cyan-400 hover:underline">
+                  +216 50 244 122
                 </a>
               </li>
             </ul>
@@ -125,17 +83,6 @@ export default function Footer() {
           <p className="text-gray-600 text-sm">
             &copy; {new Date().getFullYear()} SmartSight Technologies. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Accessibility
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

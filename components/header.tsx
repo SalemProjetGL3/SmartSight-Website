@@ -31,7 +31,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Demo", href: "/demo" },
-    { name: "Contact", href: "/contact" },
+    { name: "Features", href: "/features" },
   ]
 
   return (
@@ -66,9 +66,11 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600">
-              Get Started
-            </Button>
+            <Link href="/report">
+              <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white">
+                Get Started
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}

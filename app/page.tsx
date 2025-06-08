@@ -116,20 +116,24 @@ export default function HomePage() {
 
           <motion.div className="flex flex-col sm:flex-row gap-4" variants={itemVariants}>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href="/report">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg hover:shadow-xl transition-all duration-300 text-white"
+                >
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                size="lg"
-                className="bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 hover:border-cyan-500 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Watch Demo
-              </Button>
+              <Link href="/demo">
+                <Button
+                  size="lg"
+                  className="bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 hover:border-cyan-500 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  Watch Demo
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -432,14 +436,6 @@ export default function HomePage() {
             </motion.p>
             <motion.div className="flex flex-col sm:flex-row gap-4 justify-center" variants={itemVariants}>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-white text-emerald-600 hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    Get Started Today
-                  </Button>
-                </Link>
               </motion.div>
             </motion.div>
           </motion.div>

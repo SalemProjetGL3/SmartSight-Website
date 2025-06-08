@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Play, Pause, Volume2, VolumeX, Maximize, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Slider } from "@/components/ui/slider"
+import Link from "next/link"
 
 export default function DemoPage() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -150,15 +151,14 @@ export default function DemoPage() {
               everyday scenarios, from navigating city streets to identifying objects and reading text.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600"
-              >
-                Try the Prototype
-              </Button>
-              <Button size="lg" className="border-cyan-500 text-black hover:bg-cyan-50">
-                Contact Us <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href="/report">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white"
+                >
+                  See proof of concept
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
