@@ -75,7 +75,7 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" size="icon" className="md:hidden text-white" onClick={toggleMenu}>
+          <Button variant="ghost" size="icon" className="md:hidden text-gray-900" onClick={toggleMenu}>
             <Menu className="h-6 w-6" />
             <span className="sr-only">Open menu</span>
           </Button>
