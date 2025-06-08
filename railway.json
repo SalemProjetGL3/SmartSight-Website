@@ -1,0 +1,4 @@
+{
+    "build": "npm install --legacy-peer-deps && npm build",
+    "start": "npm start"
+  }
