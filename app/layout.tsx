@@ -24,9 +24,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="light">
-      <body className={`${inter.className} min-h-screen bg-gray-50 text-gray-900 antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen bg-background text-foreground antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-1">{children}</main>

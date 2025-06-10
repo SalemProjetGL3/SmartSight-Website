@@ -20,4 +20,22 @@ export const DynamicTooltip = dynamicRadixImport('@radix-ui/react-tooltip')
 export const DynamicDropdownMenu = dynamicRadixImport('@radix-ui/react-dropdown-menu')
 export const DynamicSelect = dynamicRadixImport('@radix-ui/react-select')
 export const DynamicTabs = dynamicRadixImport('@radix-ui/react-tabs')
-export const DynamicToast = dynamicRadixImport('@radix-ui/react-toast') 
+export const DynamicToast = dynamicRadixImport('@radix-ui/react-toast')
+
+// Slider components
+export const DynamicSlider = dynamic(() => import('@radix-ui/react-slider').then(mod => mod.Root), {
+  ssr: false,
+  loading: () => <div className="animate-pulse bg-gray-200 rounded-md h-5" />
+})
+
+export const DynamicSliderTrack = dynamic(() => import('@radix-ui/react-slider').then(mod => mod.Track), {
+  ssr: false
+})
+
+export const DynamicSliderRange = dynamic(() => import('@radix-ui/react-slider').then(mod => mod.Range), {
+  ssr: false
+})
+
+export const DynamicSliderThumb = dynamic(() => import('@radix-ui/react-slider').then(mod => mod.Thumb), {
+  ssr: false
+}) 
