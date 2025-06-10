@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback, useMemo } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
@@ -14,26 +14,35 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const isMobile = useMobile()
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+  const handleScroll = useCallback(() => {
+    setIsScrolled(window.scrollY > 10)
   }, [])
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout
+    const debouncedScroll = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(handleScroll, 100)
+    }
 
-  const navItems = [
+    window.addEventListener("scroll", debouncedScroll)
+    return () => {
+      window.removeEventListener("scroll", debouncedScroll)
+      clearTimeout(timeoutId)
+    }
+  }, [handleScroll])
+
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen(prev => !prev)
+  }, [])
+
+  const navItems = useMemo(() => [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Demo", href: "/demo" },
     { name: "Presentation", href: "/presentation" },
     { name: "Features", href: "/features" },
-  ]
+  ], [])
 
   return (
     <header
@@ -53,6 +62,8 @@ export default function Header() {
               className="h-12 w-auto object-contain" 
               style={{ backgroundColor: 'transparent' }}
               priority
+              sizes="(max-width: 768px) 120px, 180px"
+              loading="eager"
             />
           </Link>
 
@@ -102,6 +113,8 @@ export default function Header() {
                   className="h-12 w-auto object-contain" 
                   style={{ backgroundColor: 'transparent' }}
                   priority
+                  sizes="(max-width: 768px) 120px, 180px"
+                  loading="eager"
                 />
               </Link>
               <Button variant="ghost" size="icon" className="text-gray-900" onClick={toggleMenu}>
